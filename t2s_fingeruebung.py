@@ -4,7 +4,9 @@ import spacy
 import matplotlib.pyplot as plt
 from functools import reduce
 import numpy as np
+import sys
 
+sys.stdout = open('output.txt','w')
 
 paths = []
 for root, dirs, files in os.walk("Traning\\"):
